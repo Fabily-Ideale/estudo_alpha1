@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <main>
+        <section id="register">
+            <h2>Cadastro de produtos</h2>
+            <form>
+                <label for="prod_name">Nome do produto</label>
+                <input type="text" id="prod_name">
+                <label for="prod_desc">Descrição do produto</label>
+                <textarea name="prod_desc" id="prod_desc"></textarea>
+                <label for="prod_price">Preço do produto</label>
+                <input type="number" id="prod_price" min="0">
+                <button type="button" id="btn_prod_register">Incluir produto</button>
+            </form>
+            <p id="prod_confirm"></p>
+        </section>
+
+
+        <section id="prod_list">
+            <h2>Lista de produtos</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Valor</th>
+                        <th colspan="2">Ação</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+    </main>
+
+
+    <div id="modal_prod">
+        <div id="modal_prod_content">
+            <form>
+                <h2 id="modal_action"></h2>
+                <label>ID do produto</label>
+                <input type="text" id="modal_prod_id" disabled>
+                <label for="modal_prod_name">Nome do produto</label>
+                <input type="text" id="modal_prod_name">
+                <label for="modal_prod_desc">Descrição do produto</label>
+                <textarea name="modal_prod_desc" id="modal_prod_desc"></textarea>
+                <label for="modal_prod_price">Preço do produto</label>
+                <input type="number" id="modal_prod_price" min="0">
+                <button type="button" id="modal_btn_save">Salvar</button>
+                <p id="modal_prod_confirm"></p>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

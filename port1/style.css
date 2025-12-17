@@ -1,0 +1,273 @@
+
+:root {
+    --red: #B80C09;
+    --brown: #6B2B06;
+    --white: #E5E7E6;
+    --silver: #B7B5B3;
+    --black: #141301;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: var(--silver);
+}
+
+a {
+    text-decoration: none;
+    color: var(--black);
+}
+
+h1{
+    font-size: 8rem;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%; 
+    height: auto;
+    display: block;
+}
+
+header {
+    background-color: var(--red);
+    padding: 15px 150px;
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    color: var(--black);
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+#menu {
+    display: flex;
+    gap: 15px;
+}
+
+#menu a {
+    font-weight: 500;
+}
+
+#menu a:hover {
+    text-decoration: underline;
+}
+
+.botoes-nav {
+    display: flex;
+    gap: 10px;
+}
+
+.circ_botao {
+    background-color: var(--black);
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.circ_botao:hover {
+    background-color: var(--white);
+}
+
+#hero {
+    background-color: var(--red);
+    color: var(--black);
+    padding: 80px 50px;
+    min-height: 80vh; 
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+    text-align: left;
+}
+
+.conteudo-hero{
+    margin-left: 5%;
+    width: 50%;
+}
+
+.conteudo-hero h1 {
+    font-size: 8rem; 
+    margin-bottom: 20px;
+}
+
+.conteudo-hero h2 {
+    margin-bottom: 40px;
+    font-style: italic;
+}
+
+#hero button{
+    margin-right: 5%;
+}
+
+button {
+    border: 2px solid var(--black);
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    background-color: transparent;
+    border-radius: 40px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background-color: var(--white);
+}
+
+#produtos {
+    padding: 50px;
+}
+
+.cabecalho-secao {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end; 
+    margin-bottom: 40px;
+    flex-wrap: wrap; 
+    gap: 20px;
+}
+
+.cabecalho-secao div{
+    width: 70%;
+}
+
+#lista_produto {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    gap: 50px;
+    margin-top: 100px;
+}
+
+.produto article {
+    text-align: left;
+    width: 400px;
+}
+
+.produto img {
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+    margin-bottom: 15px;
+    width: 100%;
+    height: 400px;
+    object-fit: cover; 
+}
+
+footer {
+    background-color: var(--brown);
+    padding: 50px;
+    color: var(--silver);
+}
+
+footer a {
+    color: var(--white);
+    text-decoration: underline;
+}
+
+footer button {
+    border-color: var(--silver);
+    color: var(--silver);
+}
+
+footer button:hover {
+    background-color: var(--silver);
+    color: var(--brown);
+}
+
+#lista_topico {
+    margin-top: 30px;
+    border-top: 1px solid var(--white);
+}
+
+#lista_topico li {
+    padding: 20px 0;
+    border-bottom: 1px solid var(--white);
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: padding-left 0.3s;
+}
+
+#lista_topico li:hover {
+    padding-left: 10px;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.icone-mais {
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-right: 1%;
+}
+
+
+@media (max-width: 768px) {
+    h1{
+        font-size: 2rem;
+    }
+    
+    header {
+        flex-direction: column;
+        padding: 15px;
+        width: 100vw;
+    }
+    
+    header nav {
+        flex-direction: column;
+        margin-top: 15px;
+    }
+
+    #menu {
+        flex-direction: row;
+        text-align: center;
+    }
+
+    main {
+        padding-top: 15%;
+        width: 100vw;
+    }
+
+    .conteudo-hero{
+        
+    }
+
+    .conteudo-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .conteudo-hero{
+        width: 90vw;
+    }
+
+    .cabecalho-secao{
+        width: 90vw;
+    }
+
+    footer{
+        width: 100vw;
+    }
+
+    #lista_topico li {
+        font-size: 1rem;
+    }
+}
