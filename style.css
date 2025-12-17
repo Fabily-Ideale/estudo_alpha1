@@ -289,38 +289,51 @@ footer {
     }
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 @media screen and (max-width: 768px) {
-    header{
-        
+    header {
+        padding: 0 10px;
     }
 
-    main{
+    main {
         padding: 100px 10px 10px;
+
+        h1 {
+            margin: 50px 0px 10px;
+        }
 
         .project {
             flex-direction: column;
             width: 100%;
             margin: 10px 0px;
-    
+
             .project_view {
                 flex: 0 1 100%;
                 width: 100%;
             }
-    
+
             .project_info {
                 display: none;
             }
         }
-    
+
         #iframe_section {
             flex-direction: column !important;
             height: fit-content !important;
+            margin: 0px;
+
             .iframe {
                 height: fit-content !important;
                 margin: 30px 0px;
-    
-                iframe{
-                    height: 50vh !important;
+
+                iframe {
+                    height: 70vh !important;
+                }
+
+                p {
                     margin: 0px;
                 }
             }
@@ -329,6 +342,7 @@ footer {
 
     footer {
         flex-direction: column;
+
         h1 {
             flex: 0 1 30%;
             text-align: center;
@@ -336,7 +350,7 @@ footer {
         }
 
         div {
-            font-size: smaller;
+            font-size: 60%;
         }
 
         #brasil {
