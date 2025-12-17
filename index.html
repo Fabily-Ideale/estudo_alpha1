@@ -4,19 +4,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>FI's</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <h1>FI's</h1>
+        <figure>
+            <img src="icon/logo.jpg" alt="Logo">
+        </figure>
+        <svg width="100px" height="100px">
+            <circle cx="20" cy="90" r="10" fill="#E11717" />
+            <circle cx="50" cy="90" r="10" fill="#E11717" />
+            <circle cx="80" cy="90" r="10" fill="#E11717" />
+        </svg>
     </header>
     <main>
-
+        <h1>Apresentação</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
+        <section class="project">
+            <div class="project_view">
+                <img src="image/test_image.webp" alt="">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa impedit nulla accusamus </p>
+                <a href="">Conhecer</a>
+            </div>
+            <div class="project_info_modal">
+                <svg width="400px" height="400px" viewBox="0 0 400 400">
+                    <circle cx="200" cy="200" r="200" fill="#E11717" />
+                </svg>
+            </div>
+            <div class="project_info">
+                <h3>Projeto</h3>
+                <ul>
+                    <li>Explicação 1</li>
+                    <li>Explicação 2</li>
+                    <li>Explicação 3</li>
+                </ul>
+            </div>
+        </section>
+        <section class="project">
+            <div class="project_info">
+                <h3>Projeto</h3>
+                <ul>
+                    <li>Explicação 1</li>
+                    <li>Explicação 2</li>
+                    <li>Explicação 3</li>
+                </ul>
+            </div>
+            <div class="project_info_modal">
+                <svg width="400px" height="400px" viewBox="0 0 400 400">
+                    <circle cx="200" cy="200" r="200" fill="#E11717" />
+                </svg>
+            </div>
+            <div class="project_view">
+                <img src="image/test_image.webp" alt="">
+                <p id="text_variant">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa impedit nulla accusamus </p>
+                <a href="" id="link_variant">Conhecer</a>
+            </div>
+        </section>
+        <h1>Práticas úteis para jogos</h1>
+        <section id="iframe_section">
+            <div class="iframe">
+                <iframe src="port2/index.html" frameborder="0"></iframe>
+                <p>Explicação jogo</p>
+            </div>
+            <div class="iframe">
+                <iframe src="port3/index.html" frameborder="0"></iframe>
+                <p>Explicação jogo</p>
+            </div>
+        </section>
+        <h1>Projetos com foco na compreensão de conceitos</h1>
+        <section id="aside_section">
+            <article>
+                <h3>BFS</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A neque enim rem tempor</p>
+                <a href="https://github.com/Fabily-Ideale/estudo0x0">Link do projeto</a>
+            </article>
+            <article>
+                <h3>Redes</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A neque enim rem tempor</p>
+                <a href="https://fabily-ideale.github.io/estudo_alpha0/">Link do projeto</a>
+            </article>
+        </section>
     </main>
     <footer>
-
+        <h1>"Uma vez Alpha, sempre Alpha!</h1>
+        <p>Nenhum direito reservado</p>
+        <img src="icon/cc0.png" alt="">
+        <img src="icon/brasil.png" alt="">
     </footer>
 </body>
 

@@ -1,0 +1,107 @@
+:root {
+    --60_white: #ffffff;
+    --30_black: #000000;
+    --10_red: #E11717;
+}
+
+* {
+    font-family: "Roboto", Calibri, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--30_black);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding-right: 20px;
+    position: fixed;
+    height: fit-content;
+
+    figure {
+        flex: 0 1 7.5%;
+        min-width: 100px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    svg {
+        flex: 0 1 1 0%;
+        min-width: 100px;
+    }
+}
+
+main {
+    background-color: var(--60_white);
+    display: flex;
+    flex-direction: column;
+    padding: 200px 50px 100px;
+
+    .project{
+        display: flex;
+        flex-direction: row;
+        margin: 50px 0px;
+        border: 1px solid black;
+        width: 100%;
+        height: fit-content;
+        align-items: center;
+
+        .project_view{
+            display: flex;
+            flex-direction: column;
+            flex: 0 1 50%;
+
+            img{
+                width: 100%;
+                height: 100%;
+            }
+            p{
+                width: 100%;
+                height: 100%;
+                margin: 20px 0px;
+                text-align: left;
+            }
+            a{
+                text-align: right;
+            }
+            #text_variant{
+                text-align: right;
+            }
+            #link_variant{
+                text-align: left;   
+            }
+        }
+
+        .project_info_modal{
+            display: none;
+        }
+
+        .project_info{
+            flex: 0 1 50%;
+            text-align: center;
+            list-style-position: inside;
+        }
+    }
+
+    #iframe_section{
+        display: flex;
+        flex-direction: row;
+        height: fit-content;
+        width: 100%;
+        justify-content: space-between;
+
+        .iframe{
+            flex: 0 1 50%;
+            text-align: center;
+        }
+    }
+}
+
+footer {
+    background-color: var(--30_black);
+    width: 100%;
+}
