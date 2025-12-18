@@ -359,3 +359,41 @@ html {
         }
     }
 }
+
+@media screen and (min-width: 2560px) {
+    html {
+        font-size: 24px;
+    }
+
+    main {
+        max-width: 2400px;
+        margin: 0 auto;
+        padding: 250px 50px 100px;
+    }
+
+    header {
+        padding: 0 50px;
+        justify-content: space-between;
+
+        figure {
+            flex: 0 1 5%;
+        }
+
+        svg {
+            display: none;
+        }
+    }
+
+    .project {
+        margin: 150px 0;
+
+        .project_view {
+            padding: 40px;
+
+            a {
+                font-size: 2rem;
+                padding: 15px 40px;
+            }
+        }
+    }
+}
